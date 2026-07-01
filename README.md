@@ -36,6 +36,12 @@ npm run dev
 - JSONPlaceholder is a mock API, so POST, PUT, and DELETE requests succeed but do not persist across refreshes.
 - For fetched users, the `department` field is derived from the `company.name` field.
 
+## Challenges faced
+
+- The API is mock-only, so add/edit/delete actions do not persist on the server beyond the current session.
+- Client-side persistence had to be added to keep changes visible after refresh.
+- Sorting and pagination needed careful handling once local edits were introduced.
+
 ## Improvements
 
 - Add real backend persistence using a database and custom API
